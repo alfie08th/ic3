@@ -43,6 +43,8 @@ https://www.justinweiss.com/articles/search-and-filter-rails-models-without-bloa
 
 
 
+
+
 <%= form_for @snippet do |f| %>
 
   <div class="field">
@@ -62,3 +64,58 @@ https://www.justinweiss.com/articles/search-and-filter-rails-models-without-bloa
 end
 =======
 >>>>>>> 934e9bb4ec110fb889ad78ad20492a0087f9ca1f
+  
+  
+  
+import java.util.Scanner;
+import java.util.Random;
+
+public class Main {
+    public static void main(String[] args) {
+        //System.out.println("Hello world!");
+
+        //Koala koala_one = new Koala();
+		Ana koala_one = new Ana();
+        Scanner scan = new Scanner(System.in);
+        System.out.println("How does Ana scream?");
+        String koala_sound = scan.nextLine();
+
+        Random rand = new Random();
+        int koala_intensity = rand.nextInt(100);
+
+        String sound = koala_one.scream(koala_sound);
+        int intensity = koala_one.intensity(koala_intensity);
+
+
+        System.out.println("I am " + koala_one.getName() + ", I " + sound + " with intensity of " + intensity + " db");
+    }
+
+    public static class Animal{
+
+        public String sound;
+        public int loudness;
+        
+
+        public String scream(String sound){
+            this.sound = sound;
+            return sound;
+        }
+
+        public int intensity(int loudness){
+            this.loudness = loudness;
+            return loudness;
+        }
+
+        public String getName(){
+            return "" + this.getClass().getSimpleName();
+        }
+
+    }
+
+    public static class Koala extends Animal{
+    }
+	
+	public static class Ana extends Animal{
+		
+	}
+}
