@@ -67,3 +67,7 @@ end
   
   maven and angular and the rest:
   https://developer.okta.com/blog/2018/08/22/basic-crud-angular-7-and-spring-boot-2
+  
+  
+  check this out:
+  https://stackblitz.com/angular/amxanjpogmq?file=src%2Fapp%2Fauth%2Fauth-routing.module.ts
